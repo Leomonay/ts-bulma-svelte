@@ -4,7 +4,7 @@
 	let showYisus:boolean = false;
 	$: console.log(showYisus);
 	function yisus(){
-		if (showYisus) alert("Once he starts dancing you cant stop watching him")
+		if (showYisus) alert("Once he starts dancing you can't stop watching him")
 		showYisus = true
 		}
 </script>
