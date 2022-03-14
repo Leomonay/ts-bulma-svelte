@@ -32,8 +32,8 @@
 				</p>
 		</div>
 	</section>
-	<div class="column bg-img m-0">
-		<div class='column has-text-centered is-6 is-offset-6'>
+	<div class="column bg-img m-0 is-flex is-justify-content-right">
+		<div class='column has-text-centered is-6'>
 			<div>	
 				<button class='button is-primary m-1'
 				on:click="{yisus}">
