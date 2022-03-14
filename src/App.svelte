@@ -1,15 +1,12 @@
 <script lang='ts'>
 	import DancingYisus from "./components/DancingYisus.svelte";
 	let name:string = 'visitor';
-	let clickCounter:number = 0;
 	let showYisus:boolean = false;
 	$: console.log(showYisus);
 	function yisus(){
 		if (showYisus) alert("Once he starts dancing you cant stop watching him")
 		showYisus = true
 		}
-	let src:string = 'https://i.pinimg.com/originals/c9/9c/98/c99c98936a66370a09589509ca274001.gif';
-	export {DancingYisus}
 </script>
 
 <style>
@@ -21,7 +18,7 @@
 </style>
 
 <div class='hero is-fullheight'>
-	<section class="hero hero-head is-primary">
+	<section class="hero is-primary is-small">
 		<div class="hero hero-body">
 				<p class="title">
 					Compu-Global-Hyper-Mega-Net
@@ -33,7 +30,7 @@
 		</div>
 	</section>
 	<div class="column bg-img m-0 is-flex is-justify-content-right">
-		<div class='column has-text-centered is-6'>
+		<div class='column has-text-centered is-8'>
 			<div>	
 				<button class='button is-primary m-1'
 				on:click="{yisus}">
@@ -45,11 +42,7 @@
 					</button>
 			</div>
 			{#if showYisus==true}
-				<div class="column is-8 is-offset-2 ">
-					<figure class='image is-2by3'>
-						<img {src} alt="Shesus dances.">
-					</figure>
-				</div>
+				<DancingYisus/>
 			{/if}
 		</div>
 	</div>
