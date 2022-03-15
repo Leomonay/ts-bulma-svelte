@@ -34,4 +34,4 @@ I was a bit hard to find the right configuration, but it's now working.
 
 ### The App
 
-It's just a joke related to Homer's Page when he started using internet. You can see it [here](https://ts-bulma-svelte.vercel.app/).
+It's just a joke related to Homer's Page when he started using internet. You can see it [here](https://svelte-bulma-typescript.vercel.app/).

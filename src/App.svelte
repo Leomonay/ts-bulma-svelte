@@ -1,12 +1,16 @@
 <script lang='ts'>
 	import DancingYisus from "./components/DancingYisus.svelte";
+	import Modal from "./components/Modal.svelte";
 	let name:string = 'visitor';
 	let showYisus:boolean = false;
-	$: console.log(showYisus);
+	let modal:boolean = false;
 	function yisus(){
-		if (showYisus) alert("Once he starts dancing you can't stop watching him")
-		showYisus = true
+		if (showYisus) modal = true
+			showYisus = true
 		}
+	function closeModal(){
+		modal=false
+	}
 </script>
 
 <style>
@@ -49,6 +53,7 @@
 			{#if showYisus==true}
 				<DancingYisus/>
 			{/if}
+			<Modal show={modal} close={closeModal} action={()=>showYisus=false}/>
 		</div>
 	</div>
 </div>
